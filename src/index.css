@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  background: #0C0C0C;
+  font-family: 'Kanit', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.hero-heading {
+  background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-bg-video {
+  opacity: 0;
+  animation: hero-video-fade 900ms ease-out 180ms forwards;
+}
+
+@keyframes hero-video-fade {
+  to {
+    opacity: 0.42;
+  }
+}
+
+.contact-marquee {
+  animation: contact-marquee 18s linear infinite;
+}
+
+@keyframes contact-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg-video {
+    animation: none;
+    opacity: 0.34;
+  }
+
+  .contact-marquee {
+    animation: none;
+  }
+}
