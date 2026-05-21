@@ -2,10 +2,8 @@ import FadeIn from '../components/FadeIn'
 import type { ReactNode } from 'react'
 
 const contactLinks = [
-  { label: 'Instagram', href: 'https://instagram.com/' },
   { label: 'Github', href: 'https://github.com/Ayanshaikh313' },
-  { label: 'Linkedin', href: 'https://linkedin.com/' },
-  { label: 'X', href: 'https://x.com/' },
+  { label: 'Linkedin', href: 'https://www.linkedin.com/in/ayanshaikh786'},
 ]
 
 const marqueeItems = Array.from({ length: 8 }, (_, index) => index)
@@ -212,7 +210,7 @@ export default function ContactSection() {
                   lineHeight: 1,
                 }}
               >
-                +
+                ✧
               </span>
             </div>
           ))}
