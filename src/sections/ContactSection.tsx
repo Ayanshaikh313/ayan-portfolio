@@ -13,7 +13,7 @@ export default function ContactSection() {
     <section
       id="contact"
       style={{
-        height: '100svh',
+        height: '100dvh',
         background: '#000',
         color: '#F4F4F4',
         display: 'flex',
