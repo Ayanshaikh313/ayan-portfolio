@@ -35,10 +35,11 @@ export function ContactButton() {
   )
 }
 
-export function LiveProjectButton() {
+export function LiveProjectButton({ repoUrl }: { repoUrl: string }) {
   return (
     <button
-      style={{
+    onClick={() => window.open(repoUrl, '_blank')}
+      style={{ 
         background: 'transparent',
         border: '2px solid #D7E2EA',
         borderRadius: '9999px',
@@ -60,7 +61,7 @@ export function LiveProjectButton() {
         (e.currentTarget.style.background = 'transparent')
       }
     >
-      Live Project
+      View Project
     </button>
   )
 }

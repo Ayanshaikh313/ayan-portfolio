@@ -6,27 +6,30 @@ import { LiveProjectButton } from '../components/Buttons'
 const projects = [
   {
     num: '01',
-    name: 'Nextlevel Studio',
-    category: 'Client',
+    name: 'AgriGuradian : AI-Powered Crop Disease Detection Platform',
+    category: 'Hackathon',
     col1a: '/images/plant1.jpg',
     col1b: 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055431_11d841fd-8b41-46a5-82e4-b04f2407a7d8.png&w=1280&q=85',
     col2:  '/images/image.png',
+    repoUrl:'https://github.com/Ayanshaikh313/Agriguardian-AI_Based_Crop_Disease_Detection_and_Treatment_Advisor',
   },
   {
     num: '02',
-    name: 'Aura Brand Identity',
+    name: 'Xrayor – AI-Powered X-Ray Disease Detection',
     category: 'Personal',
     col1a: '/images/eye1.jpg',
     col1b: '/images/eye2.jpg',
     col2:  '/videos/project1.gif',
+    repoUrl:'https://github.com/Ayanshaikh313/Xrayor-AI_Based_Xray_Eye_Disease_Detection_System',
   },
   {
     num: '03',
-    name: 'Solaris Digital',
-    category: 'Client',
+    name: 'DocuMind AI – Intelligent Document Automation System',
+    category: 'SIH-2026',
     col1a: '/images/img4.png',
     col1b: '/images/image3.png',
     col2:  '/images/image2.png',
+    repoUrl:'https://github.com/Ayanshaikh313/DocuMind_AI-Intelligent-Document-Automation-System',
   },
 ]
 
@@ -130,7 +133,7 @@ function ProjectCard({
               </p>
             </div>
           </div>
-          <LiveProjectButton />
+          <LiveProjectButton repoUrl={project.repoUrl}/>
         </div>
 
         {/* Image grid */}
